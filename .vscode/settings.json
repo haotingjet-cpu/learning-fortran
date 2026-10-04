@@ -1,0 +1,8 @@
+{
+    "fortran.linter.includePaths": [
+        "${workspaceFolder}/build/**"
+    ],
+    "fortran.fortls.ext_source_dirs": [
+        "${workspaceFolder}/build"
+    ]
+}
