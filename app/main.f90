@@ -1,6 +1,6 @@
 program main
-  use hello_fortran, only: say_hello
+  use hello_fortran, only: run
   implicit none
 
-  call say_hello()
+  call run()
 end program main

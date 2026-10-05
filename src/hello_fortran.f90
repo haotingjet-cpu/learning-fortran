@@ -1,27 +1,17 @@
 module hello_fortran
+  use, intrinsic :: iso_fortran_env, only: sp=>real32, dp=>real64
   implicit none
   private
-  public :: say_hello
+  public :: run
 
 contains
 
-  subroutine say_hello()
-    ! 定義變數
-    integer :: va
-    real :: x, y
+  subroutine run()
+    REAL(sp) :: FLOAT
+    REAL(dp) :: DOUBLE
+    READ(*,*) FLOAT, DOUBLE
 
-    ! 輸出 hello world
-    print *, 'hello world'
-
-
-    va = 5
-    print *, 'va = ', va
-
-    print *, '輸入 x, y'
-
-    read(*, *) x, y
-    print *, 'x+y=', x+y
-
-  end subroutine say_hello
+    print *, FLOAT , DOUBLE
+  end subroutine run
 
 end module hello_fortran

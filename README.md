@@ -9,3 +9,8 @@
 ### 採到的坑
 * 變數宣告要放在最上面
 * `integer :: a = 1` 會讓 a 是 static，蹦蹦，會繼承舊值
+
+---
+
+### Day 2
+* 使用 iso_fortran_env 指定 REAL 的 size
